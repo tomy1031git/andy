@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+body,html{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #f7fcfe;
+}
+
+header{}
+
+a{
+	color: #f7fcfe;
+	text-decoration: none;
+}
+
+i{
+	margin-right: 10px;
+}
+
+
+/* メインビジュアル */
+.main_vis{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url("../images/mainvisual.png");
+	background-repeat: no-repeat;
+	background-size:100% auto;/*この場合は高さが自動設定*/
+	background-size: cover;
+}
+
+.logo{
+	width: 200px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.logo img{
+	width: 100%;
+	height: auto;
+}
+
+.menu{
+	width: 100%;
+}
+
+.menu_list{
+	display: flex;
+	justify-content: center;
+}
+
+.menu_list .menu_item{
+	margin-right: 100px;
+}
+
+.menu_list a{
+	font-size: 13px;
+}
+
+.menu_list a:hover{
+	color: #949b9f;
+}
+
+.mv_box_area{
+	position: absolute;
+	width: 250px;
+	height: 60px;
+	background-color: #1b1b18;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;/* 画面の真ん中にする（四方0にする） */
+}
+
+.mv_box_area:hover{
+	background-color: #444;
+}
+
+.mv_box{
+	position: relative;
+}
+
+.mv_box a{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	color: #f7fcfe;
+	text-align: center;
+	margin-top: 25px;
+}
+
+/* main */
+main{
+	width: 100%;
+	background-color: #f7fcfe;
+}
+
+
+/* プロフィール */
+.profile{
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 273.2px;
+	padding-bottom: 273.2px;
+}
+
+.andy{
+	position: relative;
+	width: 768px;
+	height: auto;
+}
+
+.andy img{
+	width: 100%;
+	height: auto;
+}
+
+.name_area{
+	position: absolute;
+	/* top: 1170px; */
+	top: 25%;
+	/* right: 136.6px; */
+	right: 0%;
+	width: 550px;
+	height: 120px;
+	background-color: #8e8f90;
+}
+
+.name_area p{
+	position: relative;
+/* 	top: 43px;
+	left: 120px; */
+	text-align: center;
+	margin-top: 43px;
+	font-size: 30px;
+	color: #f7fcfe;
+}
+
+.description_area{
+	position: absolute;
+	/* top: 1400px; */
+	top: 35%;
+	/* right: 136.6px; */
+	right: 0%;
+	width: 550px;
+	height: 880px;
+	background-color: #d0bedc;
+}
+
+.description{
+	width: 40%;
+	letter-spacing: 0.1em;
+	line-height: 3em;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 180px;
+	box-sizing: border-box;
+}
+
+
+/* ピックアップ */
+.pickup_bg{
+	width: 100%;
+	background-color: #e7e7e7;
+	padding-top: 136.6px;
+	padding-bottom: 136.6px;
+}
+
+.pickup{
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.pickup_left{}
+
+.t_shirt img{
+	width: 543px;
+	height: auto;
+}
+
+.pickup_right{}
+
+.pickup_area{
+	position: relative;
+	width: 621px;
+	height: 332px;
+	background-color: #1b1b18;
+}
+
+.pickup_area a{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+	font-size: 18px;
+	color: #f7fcfe;
+	text-align: center;
+	padding-top: 157px;
+	box-sizing: border-box;
+}
+
+.pickup_area a:hover{
+	background-color: #444;
+}
+
+.shoes img{
+	width: 621px;
+	height: auto;
+}
+
+
+
+/* ニューコレクション */
+.newcollection_bg{
+	width: 100%;
+	background-color: #f7fcfe;
+	padding-top: 136.6px;
+	padding-bottom: 136.6px;
+}
+
+.newcollection{
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.new01 img{
+	width: 388px;
+	height: auto;
+}
+
+.newcollection_area{
+	position: relative;
+	width: 388px;
+	height: 79px;
+	background-color: #1b1b18;
+}
+
+.newcollection_btn a{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    font-size: 11px;
+    color: #f7fcfe;
+	text-align: center;
+	padding-top: 34.5px;
+	box-sizing: border-box;
+
+}
+
+.newcollection_btn a:hover{
+	background-color: #444;
+}
+
+.new02{
+	box-sizing: border-box;
+}
+
+.new02 img{
+	width: 388px;
+	height: auto;
+}
+.new03 img{
+	width: 388px;
+	height: auto;
+}
+
+
+
+/* フッター */
+footer{
+	width: 100%;
+	background-color: #1b1b1b;
+	font-size: 14px;
+}
+
+.footer_area{
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.guideline{
+	width: 34%;
+}
+
+.guideline a{
+	display: block;
+}
+
+.official_sns{
+	width: 34%;
+}
+
+.official_sns a{
+	display: block;
+}
+
+.online_shop{
+	width: 32%;
+}
+
+.online_shop a{
+	display: block;
+}
+
+.footer_tit{
+	color: #949b9f;
+	margin-bottom: 45px;
+}
+
+.footer_link{
+	color: #f7fcfe;
+	margin-bottom: 30px;
+}
+
+.footer_link:hover{
+	color: #949b9f;
+}
+
+.copyright{
+	display: flex;
+	width: 84%;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding-bottom: 10px;
+}
+
+.copyright p{
+	color: #949b9f;
+	margin-top: 20px;
+	margin-left: 64%;
+}
+
+.footer_logo img{
+	width: 140px;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
